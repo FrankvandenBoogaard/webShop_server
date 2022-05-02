@@ -3,7 +3,7 @@ const User = require('../models').user;
 
 const router = new Router();
 
-// GET all users @ http://localhost:4000/users
+// GET all users
 router.get('/', async (req, res, next) => {
   try {
     const users = await User.findAll();
