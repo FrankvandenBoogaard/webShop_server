@@ -15,14 +15,18 @@ module.exports = {
       'users',
       [
         {
-          name: 'John Doe',
-          email: 'johndoe@hotmail.com',
-          password: 'myPassword'
+          name: 'Amani Amadeo Pfister',
+          email: 'amani@hotmail.com',
+          password: 'myPassword1',
+          createdAt: new Date(),
+          updatedAt: new Date(),
         },
         {
-          name: 'John Doe',
-          email: 'johndoe@hotmail.com',
-          password: 'myPassword'
+          name: 'Frank van den Boogaard',
+          email: 'frank@hotmail.com',
+          password: 'myPassword2',
+          createdAt: new Date(),
+          updatedAt: new Date(),
         },
       ],
       {}
@@ -36,6 +40,6 @@ module.exports = {
      * Example:
      * await queryInterface.bulkDelete('People', null, {});
      */
-     await queryInterface.bulkDelete('users', null, {});
+    await queryInterface.bulkDelete('users', null, {});
   },
 };
