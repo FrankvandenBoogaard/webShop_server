@@ -11,6 +11,8 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      product.hasMany(models.categories);
+
     }
   }
   product.init({
@@ -19,7 +21,6 @@ module.exports = (sequelize, DataTypes) => {
     description: DataTypes.TEXT,
     rating: DataTypes.FLOAT,
     mainImage: DataTypes.TEXT,
-    categoryId: DataTypes.INTEGER
   }, {
     sequelize,
     modelName: 'product',
